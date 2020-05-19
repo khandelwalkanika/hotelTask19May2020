@@ -1,0 +1,38 @@
+
+<h4 class="list-group-item-heading">{{ hotel.name}}</h4>
+
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    
+
+    <div class="form-group col-md-4">
+        <label for="fromdate">Check in</label>
+        <input type="date" id="fromdate" name="fromdate" class="form-control" ngModel required/>
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="todate">Check Out</label>
+        <input type="date" id="todate" name="todate" class="form-control" ngModel required/>
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="roomNum">No of Rooms</label>
+        <input type="number" id="roomNum" name="roomNum" class="form-control" ngModel required/>
+    </div>
+
+
+    <!-- <div>
+        <p>
+            Total Price: Rs.{{ price }}
+        </p>
+    </div>  -->
+    <hr>
+    <div>
+        <button class="btn btn-primary" type="submit" >Get Invoice</button>
+    </div>
+    
+</form>
+<!-- //type of room
+//date pick-----
+//no of pax  number box ~~optional
+//no of rooms -->
